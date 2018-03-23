@@ -1,0 +1,35 @@
+<!--
+  Generated template for the FavoritesModalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>favorites</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h5>Nuevo restaurant</h5>
+  <p>
+    Agregar un luegar que te encanta visitar.
+  </p>
+  <ion-list>
+    <ion-item>
+      <ion-label fixed>Nombre</ion-label>
+      <ion-input type="text" [(ngModel)]="restaurant.nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Direccion</ion-label>
+      <ion-input type="text" [(ngModel)]="restaurant.direccion"></ion-input>
+    </ion-item>
+    <ion-item>
+      <button ion-button default color="primary" (click)="OnSave(restaurant)">Guardar</button>
+      <button ion-button default color="danger" (click)="OnClose()">Cerrar</button>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Principal</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Calculadora Propinas</h2>
+  <p>
+    Ingrese el costo del servicio y el % de propina
+  </p>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label fixed>Costo</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="costo"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <button ion-button color = "light" item-end (click) = "CalcularPropina()" >Calcular</button>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label>{{totalPropina}}</ion-label>
+      <ion-label>{{totalGlobal}}</ion-label>
+    </ion-item>
+
+  </ion-list>
+</ion-content>
